@@ -54,7 +54,7 @@ document.write("Index javascript");
       }
     }
 
-    const bird = new Parrot("Vẹt");
+    const bird = new Parrot("Két");
     console.log(bird.name, "can");
     bird.eat();
     bird.fly();
@@ -90,7 +90,7 @@ document.write("Index javascript");
       const c = a + b;
       return () => console.log(c);
     }
-    sum(1, 2)();
+    sum(4, 5)();
 
     let a = [1, 2, 3];
     a[-1] = 4;
