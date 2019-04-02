@@ -47,7 +47,7 @@ document.write("Index javascript");
     class Parrot extends Bird {
       fly() {
         super.fly();
-        console.log("on the sky");
+        console.log("on the sky ...");
       }
       speak() {
         console.log("Speaking...");
