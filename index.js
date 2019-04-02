@@ -1,4 +1,4 @@
-//"use strict";
+"use strict";
 var hoisting_example = "test_hoisting_AAA";
 document.write("Index javascript");
 (function ($) {
