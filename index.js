@@ -1,9 +1,9 @@
-//"use strict";
+"use strict";
 var hoisting_example = "test_hoisting_AAA";
 document.write("Index javascript");
 (function ($) {
   $("#btn").click(function () {
-    alert("ok");
+    alert("Ok");
   });
   $(document).ready(function () {
     $("#imgid")
@@ -54,7 +54,7 @@ document.write("Index javascript");
       }
     }
 
-    const bird = new Parrot("Két");
+    const bird = new Parrot("Vẹt");
     console.log(bird.name, "can");
     bird.eat();
     bird.fly();
