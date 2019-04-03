@@ -3,7 +3,7 @@ var hoisting_example = "test_hoisting_AAA";
 document.write("Index javascript");
 (function ($) {
   $("#btn").click(function () {
-    alert("Ok thoi!");
+    alert("OK");
   });
   $(document).ready(function () {
     $("#imgid")
