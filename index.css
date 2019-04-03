@@ -5,3 +5,16 @@ body {
 .main .top .bottom .hand .ne {
   font-size: 2rem;
 }
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 2rem;
+}
