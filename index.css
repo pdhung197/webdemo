@@ -7,14 +7,22 @@ body {
 }
 
 .wrapper {
+  display: -ms-grid;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .wrapper > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   padding: 2rem;
 }
+/*# sourceMappingURL=index.css.map */
