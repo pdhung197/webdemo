@@ -146,6 +146,12 @@ document.write("Index javascript");
     console.log(isStrictMode());
   });
 
+  $(window).on("resize", function () {
+    $('#cssgrid > div').each(function () {
+      $(this).text($(this).width());
+    });
+  });
+
   function isStrictMode() {
     console.log(typeof this);
     return typeof this === "undefined";
