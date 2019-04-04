@@ -18,7 +18,13 @@ document.write("Index javascript");
       $('label[for="' + $(this).attr("id") + '"]').text($(this).val());
     });
     $("#addinputbtn").click(function () {
+      addmessage('Bắt đầu ..');
       addaninput2();
+      addmessage('Kết thúc ..');
+    });
+
+    $('#clrmsgbtn').click(function () {
+      $("#notifmess").empty();
     });
 
     $("#removeadd").click(function () {
@@ -193,18 +199,23 @@ document.write("Index javascript");
   function addmessage(newtext) {
     $("#notifmess").append(`<span>${newtext}</span><br />`);
   }
+
   async function addaninput2() {
     try {
       await newpromfunc();
-      $("#textdiv").prepend(`<input type="text" name="${$('input[type="text"]')
-        .length + 1}" id="${$('input[type="text"]').length + 1}" value="">
-            <label for="${$('input[type="text"]').length + 1}">Test ${$(
-          'input[type="text"]'
-        ).length + 1}</label>`);
-      addmessage("Đã add input");
+      doAddanInput();
     } catch (error) {
       addmessage("Quá 5 input", error);
     }
+  }
+
+  function doAddanInput() {
+    $("#textdiv").prepend(`<input type="text" name="${$('input[type="text"]')
+      .length + 1}" id="${$('input[type="text"]').length + 1}" value="">
+            <label for="${$('input[type="text"]').length + 1}">Test ${$(
+        'input[type="text"]'
+      ).length + 1}</label>`);
+    addmessage("Đã add input");
   }
 
   function globalfunction() {
