@@ -187,12 +187,7 @@ document.write("Index javascript");
   function addaninput() {
     newpromfunc()
       .then(() => {
-        $("#textdiv").prepend(`<input type="text" name="${$(
-          'input[type="text"]'
-        ).length + 1}" id="${$('input[type="text"]').length + 1}" value="">
-                <label for="${$('input[type="text"]').length + 1}">Test ${$(
-          'input[type="text"]'
-        ).length + 1}</label>`);
+        doAddanInput();
       })
       .catch(() => console.log("Quá 5 input"));
   }
