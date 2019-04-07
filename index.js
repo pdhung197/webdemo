@@ -150,6 +150,7 @@ document.write("Index javascript");
   $(window).on("load", function () {
     console.log("window");
     console.log(isStrictMode());
+    console.log('length', [...[...'...']], [...[...'...']].length);
   });
 
   $(window).on("resize", function () {
