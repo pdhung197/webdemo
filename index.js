@@ -1,5 +1,5 @@
+/* eslint-disable no-console */
 "use strict";
-var hoisting_example = "test_hoisting_AAA";
 document.write("Index javascript");
 (function ($) {
   $("#btn").click(function () {
@@ -66,10 +66,9 @@ document.write("Index javascript");
     bird.fly();
     bird.speak();
 
-    let foo = 1;
     function printFoo(shouldDo) {
       if (shouldDo) {
-        let foo = 2;
+        var foo = 2;
       }
       return foo;
     }
@@ -176,7 +175,7 @@ document.write("Index javascript");
       }
     };
     const { a, ...c } = obj;
-    console.log(c);
+    console.log(a, c);
   }
   function newpromfunc() {
     return new Promise(function (res, rej) {
@@ -185,13 +184,13 @@ document.write("Index javascript");
     });
   }
 
-  function addaninput() {
+  /* function addaninput() {
     newpromfunc()
       .then(() => {
         doAddanInput();
       })
       .catch(() => console.log("Quá 5 input"));
-  }
+  } */
   function addmessage(newtext) {
     $("#notifmess").append(`<span>${newtext}</span><br />`);
   }
@@ -221,7 +220,7 @@ document.write("Index javascript");
         console.log(this.name);
       }
     };
-    var ms = mouse.sayHi.apply(mouse);
+    /* var ms = mouse.sayHi.apply(mouse); */
     mouse.sayHi();
     //ms();
   }
@@ -229,7 +228,7 @@ document.write("Index javascript");
   function explainHoisting() {
     var hoisting_example;
     console.log(hoisting_example);
-    var hoisting_example = "testing_hoisting_BBB";
+    hoisting_example = "testing_hoisting_BBB";
     console.log(hoisting_example);
   }
 })(jQuery);

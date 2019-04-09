@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./lib/css/formvalid.css" />
+</head>
+
+<body>
+    <div class="container-fluid validform">
+        <div class="row d-none">
+            <div class="col-12">
+                <ul id="effectpane" class="effectpane">
+                    <li class="effectpaneli">Element 1</li>
+                    <li class="effectpaneimg">
+                        <img src="./chung-cu-osaka-complex.jpg" alt="">
+                    </li>
+                    <li class="effectpaneli">Element 2</li>
+                    <li class="effectpaneimg">
+                        <img src="./chung-cu-osaka-complex.jpg" alt="">
+                    </li>
+                    <li class="effectpaneli">Element 3</li>
+                    <li class="effectpaneimg">
+                        <img src="./chung-cu-osaka-complex.jpg" alt="">
+                    </li>
+                    <li class="effectpaneli">Element 4</li>
+                    <li class="effectpaneimg">
+                        <img src="./chung-cu-osaka-complex.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <form class="row" onsubmit="return validateForm()">
+            <div class="col-md-6 validform-element">
+                <label class="pretitle" for="ten">Họ tên</label>
+                <input type="text" data-type="text" name="ten" id="ten" placeholder="Họ và tên" value="ấdada">
+                <label class="text-danger errortext" for="ten"></label>
+            </div>
+            <div class="col-md-6 validform-element">
+                <label class="pretitle" for="matkhau">Mật khẩu</label>
+                <input type="password" data-type="text" name="matkhau" id="matkhau" placeholder="Mật khẩu"
+                    value="ấdadad">
+                <label class="text-danger errortext" for="matkhau"></label>
+            </div>
+            <div class="col-md-6 validform-element">
+                <label class="pretitle" for="thang">Tháng sinh</label>
+                <select name="thang" data-type="text" id="thang" placeholder="tháng sinh">
+                    <option disabled value="">Chọn tháng</option>
+                    <option selected value="T1">Tháng 1</option>
+                    <option value="T2">Tháng 2</option>
+                    <option value="T3">Tháng 3</option>
+                    <option value="T4">Tháng 4</option>
+                    <option value="T5">Tháng 5</option>
+                    <option value="T6">Tháng 6</option>
+                    <option value="T7">Tháng 7</option>
+                    <option value="T8">Tháng 8</option>
+                    <option value="T9">Tháng 9</option>
+                    <option value="T10">Tháng 10</option>
+                    <option value="T11">Tháng 11</option>
+                    <option value="T12">Tháng 12</option>
+                </select>
+                <label class="text-danger errortext" for="thang"></label>
+            </div>
+            <div class="col-md-6 validform-element">
+                <label class="pretitle" for="ngay">Ngày sinh</label>
+                <input type="text" data-type="number" data-numbertype="integer" data-min="1" data-max="31" name="ngay"
+                    value="1" id="ngay" placeholder="Ngày sinh">
+                <label class="text-danger errortext" for="ngay"></label>
+            </div>
+            <div class="col-md-6 validform-element">
+                <label class="pretitle" for="name">Năm sinh</label>
+                <input type="text" data-type="number" data-numbertype="integer" data-min="1900" data-max="" name="nam"
+                    value="2000" id="nam" placeholder="Năm sinh">
+                <label class="text-danger errortext" for="nam"></label>
+            </div>
+            <div class="col-md-6 validform-element">
+                <label class="pretitle" for="address">Địa chỉ</label>
+                <input type="text" data-type="address" name="address" id="address" placeholder="Địa chỉ" value="ádsad">
+                <label class="text-danger errortext" for="address"></label>
+            </div>
+            <div class="col-md-6 validform-element">
+                <label class="pretitle" for="email">Email</label>
+                <input type="text" data-type="email" name="email" id="email" placeholder="Email" value="adadasd">
+                <label class="text-danger errortext" for="email"></label>
+            </div>
+            <div class="col-md-6 validform-element">
+                <label class="pretitle" for="phone">Số điện thoại</label>
+                <input type="text" data-type="phone" name="phone" id="phone" placeholder="Số điện thoại" value="adada">
+                <label class="text-danger errortext" for="phone"></label>
+            </div>
+            <div class="col-md-6 validform-element">
+                <label class="pretitle" for="webadd">Website</label>
+                <input type="text" data-type="domain" name="webadd" id="webadd" placeholder="Website" value="ádad">
+                <label class="text-danger errortext" for="webadd"></label>
+            </div>
+            <div class="col-md-6 validform-element">
+                <label for="">Submit</label>
+                <button class="btn btn-success rounded-0" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="./lib/js/formvalid.js"></script>
+
+</html>

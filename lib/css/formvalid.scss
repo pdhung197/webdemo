@@ -1,0 +1,29 @@
+.validform {
+  .validform-element {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  select#thang {
+    padding: 0.2rem;
+  }
+}
+
+.effectpane {
+  list-style: none;
+  li {
+    &.effectpaneli {
+      padding: 1rem 2rem;
+      background-color: cyan;
+      border: 1px solid #eee;
+    }
+    &.effectpaneimg {
+      display: none;
+      margin-left: 100%;
+      img {
+        max-height: 4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.validform .validform-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.validform select#thang {
+  padding: 0.2rem;
+}
+
+.effectpane {
+  list-style: none;
+}
+
+.effectpane li.effectpaneli {
+  padding: 1rem 2rem;
+  background-color: cyan;
+  border: 1px solid #eee;
+}
+
+.effectpane li.effectpaneimg {
+  display: none;
+  margin-left: 100%;
+}
+
+.effectpane li.effectpaneimg img {
+  max-height: 4rem;
+}
+/*# sourceMappingURL=formvalid.css.map */
