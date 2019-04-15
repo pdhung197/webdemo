@@ -8,9 +8,35 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./lib/css/formvalid.css" />
+    <style>
+        .logo {
+            z-index: 1;
+        }
+
+        .company {
+            position: relative;
+            z-index: 2;
+        }
+
+        img {
+            position: absolute;
+            z-index: 10;
+        }
+
+        span {
+            position: absolute;
+            z-index: 20;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="logo">
+        <img src="https://via.placeholder.com/150" alt="" srcset="">
+    </div>
+    <div class="company">
+        <span>Company name</span>
+    </div>
     <div class="container-fluid validform">
         <div class="row d-none">
             <div class="col-12">
@@ -101,6 +127,7 @@
                 <label for="">Submit</label>
                 <button class="btn btn-success rounded-0" type="submit">Submit</button>
             </div>
+
         </form>
     </div>
 </body>

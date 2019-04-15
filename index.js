@@ -150,6 +150,7 @@ document.write("Index javascript");
     console.log("window");
     console.log(isStrictMode());
     console.log('length', [...[...'...']], [...[...'...']].length);
+    console.log(formatDate("02/01/2014"));
   });
 
   $(window).on("resize", function () {
@@ -224,7 +225,14 @@ document.write("Index javascript");
     mouse.sayHi();
     //ms();
   }
-
+  function formatDate(userDate) {
+    // format from M/D/YYYY to YYYYMMDD
+    let userDatetime = new Date(userDate);
+    let getFullYear = userDatetime.getFullYear();
+    let getMonth = userDatetime.getMonth() + 1;
+    let getDate = userDatetime.getDate();
+    return `${getFullYear}${getMonth}${getDate}`;
+  }
   function explainHoisting() {
     var hoisting_example;
     console.log(hoisting_example);
